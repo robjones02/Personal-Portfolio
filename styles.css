@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height: 80px;
+    --body-background-color: #d1d0d0;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--body-background-color);
+}
+
+#main{
+    position: relative;
+    top: var(--navbar-height);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: var(--navbar-height);
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    background: linear-gradient(#3a3a3d, #030303);
+    font-weight: normal;
+    z-index: 100;
+}
+
+#navbar a{
+    margin-right: 100px;
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: normal;
+}
+
+
+
+
+.skills-list{
+    margin-left: 20px;
+}
+
+
+
+#introduction{
+    height: calc(100vh - var(--navbar-height));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.section{
+    height: calc(100vh - var(--navbar-height));
+    padding-top: var(--navbar-height);
+    margin-top: calc(var(--navbar-height) * -1);
+    border-bottom: 1px dashed black; 
+
+}
+
+#introduction h1{
+    margin-left: 50px;
+    font-size: 200%;  
+}
+
+
+
+.img-container{
+    max-width: 500px;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
