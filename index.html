@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="#about">About</a>
+        <a href="#introduction">About</a>
         <a href="#skills">Skills</a>
         <a href="#previous_work">Projects</a>
         <a href="#contact">Contact Me</a>
@@ -16,13 +16,18 @@
 
 <section id="main">
     <section id="introduction" class="section">
-        <h1>Hello, my name is Rob Jones</h1>
+        <div class="portrait-container">
+            <img src="jackedglassessman.jpg">
+        </div>
+        <div class="intro-text">
+            <p class="heading">Hello, my name is Rob Jones</p>
+            <p>I am learning front end development</p>
+            <p>(It is very hard)</p>
+        </div>
     </section>
-    <div class="container">
-    <section id="about" class="section">
-        <h1>Some cool facts about me</h1>
-        <p>Recent graduate...</p>
-        <h1>Skills</h1>
+
+    <section id="skills" class="section">
+        <h1>Here's what I can do so far</h1>
         <div class="img-grid">
             <div class="img-container">
                 <p>HTML, CSS and JavaScript</p>
@@ -30,32 +35,47 @@
             </div>
             <div class="img-container">
                 <p>Unity Game Development</p>
-                <img src="htmlcssjs.jpg" alt="html, css and js logos">
+                <a href="https://rjones02.itch.io/"><img src="gamedev0.jpg" alt="html, css and js logos"></a>
             </div>
             <div class="img-container">
                 <p>three.js and tone.js</p>
-                <img src="htmlcssjs.jpg" alt="html, css and js logos">
+                <img src="threetone2.PNG" alt="html, css and js logos">
             </div>
             <div class="img-container">
                 <p>React.js (eventually)</p>
-                <img src="htmlcssjs.jpg" alt="html, css and js logos">
+                <img src="react.png" alt="html, css and js logos">
             </div>
         </div>
-        
-        <ul class="skills-list">
-            <li>HTML, CSS</li>
-            
-            <li>Unity Game Engine</li>
-            
-            <li>C# Scripting</li>
-        </ul>
     </section>
-    </div>
-    <section id="skills" class="section">
+
+    <section id="previous_work" class="section">
+        <h1>Here are some of my projects</h1>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Contact Me</h1>
+
+        <form class="contact-form"> 
+
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Please enter your name" required>
+            </div>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" required placeholder="Please enter your email" required>
+            </div>
+            <div class="input-field">
+                <label for="message">Message</label>
+                <textarea placeholder="Hi Rob..." rows="4" cols="50" required></textarea>
+            </div>
+            <div class="input-field">
+                <input type="submit" value="Send">
+            </div>
+            
+        </form>
         
     </section>
-    <section id="previous_work" class="section"></section>
-    <section id="contact" class="section"></section>
 </section>
     
 </body>
